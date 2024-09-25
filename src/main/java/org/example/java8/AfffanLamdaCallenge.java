@@ -1,6 +1,7 @@
 package org.example.java8;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class AfffanLamdaCallenge {
@@ -31,8 +32,38 @@ public class AfffanLamdaCallenge {
         List<String> str1=Arrays.asList("a","b","c","d");
         str1.stream().map(x->x.toUpperCase()).forEach(System.out::println);
 
+        System.out.println("Distinct");
+
+
+         nums1.stream().distinct().forEach(System.out::println);
+
+        System.out.println("sum");
+
+        int j=nums1.stream().mapToInt(Integer::intValue).sum();
+        System.out.println(j);
+
+        List<String> str2=Arrays.asList("a","b","c","d");
+        String concatenated = str2.stream().collect(Collectors.joining(","));
+        System.out.println(concatenated);
+
+        List<String> emp=Arrays.asList("Mirza","Affan5","Abid","Umair7777");
+        Map<Integer,List<String>> emp1=emp.stream().collect(Collectors.groupingBy(s->s.length()));
+        System.out.println(emp1);
+
+
+
+        //13
+
+        List<String> p1=Arrays.asList("Mirza","Affan","Afreedii","Asif");
+        List<Integer> page=Arrays.asList(22,44,25,33);
+
+
+
+
+
 
 
 
     }
 }
+
