@@ -3,7 +3,7 @@ package org.example.collections;
 import java.util.*;
 
 
-class Student implements Comparable {
+class Student implements Comparable<Student> {
 
     int id;
     String name;
@@ -22,6 +22,14 @@ class Student implements Comparable {
                 ", name='" + name + '\'' +
                 ", marks=" + marks +
                 '}';
+    }
+
+
+    public int compareTo(Student that) {
+        if(this.marks>that.marks)
+            return 1;
+        else
+            return -1;
     }
 }
 
