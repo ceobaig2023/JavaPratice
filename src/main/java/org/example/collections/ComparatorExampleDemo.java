@@ -1,11 +1,16 @@
 package org.example.collections;
 
+import java.io.Serializable;
 import java.util.Comparator;
 import java.util.*;
 
 public class ComparatorExampleDemo {
 
     public static void main(String[] args) {
+/*Comparable  Natural ;
+
+        Serializable*/
+
 
         Comparator comp = new Comparator<Integer>() {
             public int compare(Integer i, Integer j) {
