@@ -1,6 +1,6 @@
 package org.example.java8;
 import java.util.*;
-public class StreamAPIexample {
+public class StreamAPIexample123 {
 
     public static void main(String[] args) {
 

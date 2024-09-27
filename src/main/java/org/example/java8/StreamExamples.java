@@ -3,6 +3,7 @@ package org.example.java8;
 import java.util.*;
 import java.util.stream.*;
 
+/*
 class Person {
     String name;
     int age;
@@ -25,6 +26,7 @@ class Person {
         return "Person{name='" + name + "', age=" + age + '}';
     }
 }
+*/
 
 public class StreamExamples {
 

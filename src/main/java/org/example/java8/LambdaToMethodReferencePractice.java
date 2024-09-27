@@ -18,7 +18,7 @@ public class LambdaToMethodReferencePractice {
         System.out.println(startsWithA.test("Alice")); // true
 
         // 3. Lambda to convert a string to upper case
-        Function<String, String> toUpperCase = String::toUpperCase();
+        Function<String, String> toUpperCase = String::toUpperCase;
         System.out.println(toUpperCase.apply("hello")); // HELLO
 
         // 4. Lambda to get the length of a string
