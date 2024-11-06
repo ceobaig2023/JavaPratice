@@ -1,3 +1,4 @@
+/*
 package org.example.exceptionhandelling;
 
 class CustomizedException extends Exception{
@@ -22,3 +23,4 @@ public class CustomException extends Exception {
 
 }
 
+*/
